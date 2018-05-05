@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		69917A8D209DCD930043F991 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69917A8C209DCD930043F991 /* AppDelegate.swift */; };
-		69917A8F209DCD930043F991 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69917A8E209DCD930043F991 /* ViewController.swift */; };
+		69917A8F209DCD930043F991 /* MusicAndImageSliderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69917A8E209DCD930043F991 /* MusicAndImageSliderController.swift */; };
 		69917A92209DCD930043F991 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69917A90209DCD930043F991 /* Main.storyboard */; };
 		69917A94209DCD950043F991 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69917A93209DCD950043F991 /* Assets.xcassets */; };
 		69917A97209DCD950043F991 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69917A95209DCD950043F991 /* LaunchScreen.storyboard */; };
+		69917A9F209DCE210043F991 /* ImgaeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69917A9E209DCE210043F991 /* ImgaeSlider.swift */; };
+		69917AA1209DCF720043F991 /* song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69917AA0209DCF720043F991 /* song.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		69917A89209DCD930043F991 /* MusicAndImageSlider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicAndImageSlider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69917A8C209DCD930043F991 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		69917A8E209DCD930043F991 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		69917A8E209DCD930043F991 /* MusicAndImageSliderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicAndImageSliderController.swift; sourceTree = "<group>"; };
 		69917A91209DCD930043F991 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		69917A93209DCD950043F991 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69917A96209DCD950043F991 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69917A98209DCD950043F991 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69917A9E209DCE210043F991 /* ImgaeSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgaeSlider.swift; sourceTree = "<group>"; };
+		69917AA0209DCF720043F991 /* song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = song.mp3; path = ../../TSlider/TSlider/song.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				69917A8C209DCD930043F991 /* AppDelegate.swift */,
-				69917A8E209DCD930043F991 /* ViewController.swift */,
+				69917A8E209DCD930043F991 /* MusicAndImageSliderController.swift */,
+				69917A9E209DCE210043F991 /* ImgaeSlider.swift */,
 				69917A90209DCD930043F991 /* Main.storyboard */,
 				69917A93209DCD950043F991 /* Assets.xcassets */,
 				69917A95209DCD950043F991 /* LaunchScreen.storyboard */,
 				69917A98209DCD950043F991 /* Info.plist */,
+				69917AA0209DCF720043F991 /* song.mp3 */,
 			);
 			path = MusicAndImageSlider;
 			sourceTree = "<group>";
@@ -96,6 +102,11 @@
 				TargetAttributes = {
 					69917A88209DCD930043F991 = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -123,6 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				69917A97209DCD950043F991 /* LaunchScreen.storyboard in Resources */,
+				69917AA1209DCF720043F991 /* song.mp3 in Resources */,
 				69917A94209DCD950043F991 /* Assets.xcassets in Resources */,
 				69917A92209DCD930043F991 /* Main.storyboard in Resources */,
 			);
@@ -135,8 +147,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69917A8F209DCD930043F991 /* ViewController.swift in Sources */,
+				69917A8F209DCD930043F991 /* MusicAndImageSliderController.swift in Sources */,
 				69917A8D209DCD930043F991 /* AppDelegate.swift in Sources */,
+				69917A9F209DCE210043F991 /* ImgaeSlider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +294,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6LW826RDZF;
 				INFOPLIST_FILE = MusicAndImageSlider/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -298,6 +312,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6LW826RDZF;
 				INFOPLIST_FILE = MusicAndImageSlider/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
